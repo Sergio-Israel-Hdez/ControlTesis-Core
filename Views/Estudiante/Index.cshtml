@@ -5,5 +5,26 @@
 
 <div class="text-center">
     <h1 class="display-4">Bienvenido Estudiante</h1>
-    
+    <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Docente</th>
+      <th scope="col">Tema</th>
+      <th scope="col">Nota</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in ViewBag.CabezaGrupoEstudiante as IQueryable<dynamic>)
+    {
+    <tr>
+      <th scope="row">@item.IdGrupo</th>
+      <td>@item.Docente</td>
+      <td>@item.Tema</td>
+      <td>@item.Nota</td>
+    </tr>
+    }
+  </tbody>
+</table>
+
 </div>

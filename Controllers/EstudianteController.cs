@@ -14,6 +14,7 @@ namespace ControlTesisCore.Controllers
     public class EstudianteController : Controller
     {
         const string SessionId ="_idUsuario";
+        Models.EstudianteModel estudianteModel = new EstudianteModel();
         private readonly ILogger<HomeController> _logger;
 
         public EstudianteController(ILogger<HomeController> logger)
@@ -24,9 +25,11 @@ namespace ControlTesisCore.Controllers
         public IActionResult Index()
         {
             int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
+            
             if (idUsuario!=default(int))
             {
-                
+                var resultCabezaGrupo = estudianteModel.CabezaGrupoEstudiante(idUsuario);
+                ViewBag.CabezaGrupoEstudiante = resultCabezaGrupo;
                 return View();
             }else{
                 return RedirectToAction("Index","Home");
