@@ -15,7 +15,7 @@
     </tr>
   </thead>
   <tbody>
-    @foreach (var item in ViewBag.CabezaGrupoEstudiante as IQueryable<dynamic>)
+    @foreach (var item in ViewBag.CabezaGrupoEstudiante as IQueryable<ControlTesisCore.Models.BD.CabezaGrupoEstudiante>)
     {
     <tr>
       <th scope="row">@item.IdGrupo</th>
