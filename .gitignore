@@ -1,3 +1,15 @@
 .vscode/launch.json
 .vscode/tasks.json
 
+obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
+obj/Debug/netcoreapp3.0/Razor/Views/Shared/_LayoutEstudiante.cshtml.g.cs
+obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
+obj/Debug/netcoreapp3.0/Razor/Views/Shared/_LayoutEstudiante.cshtml.g.cs
+bin/Debug/netcoreapp3.0/ControlTesisCore.deps.json
+bin/Debug/netcoreapp3.0/ControlTesisCore.pdb
+bin/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
+bin/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
