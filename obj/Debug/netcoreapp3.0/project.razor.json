@@ -14349,6 +14349,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Estudiante\\Index.cshtml",
+      "TargetPath": "Views\\Estudiante\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14356,6 +14361,11 @@
     {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Shared\\_LayoutEstudiante.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutEstudiante.cshtml",
       "FileKind": "mvc"
     },
     {

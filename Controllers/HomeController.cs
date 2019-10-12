@@ -49,14 +49,18 @@ namespace ControlTesisCore.Controllers
                     }
                     if (rol==2)
                     {
-                        //estudiante
+                        return RedirectToAction("Index","Estudiante");
                     }
                     if (rol==3)
                     {
                         //administrador
                     }
+                }else
+                {
+                    return View(usuario);
                 }
             }
+            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
