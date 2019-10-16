@@ -27,7 +27,8 @@ namespace ControlTesisCore.Models
                         join cuerp_grup in ct.CuerpoGrupo on estu.Idestudiante equals cuerp_grup.Idestudiante
                         join carre in ct.Carrera on estu.Idcarrera equals carre.Idcarrera
                         where cuerp_grup.Idgrupo ==idGrupo
-                        select new BD.CuerpoGrupoEstudiante { Carnet = user.Carnet,
+                        select new BD.CuerpoGrupoEstudiante { 
+                                    Carnet = user.Carnet,
                                     Nombre = estu.Nombre+' '+estu.Apellido,
                                     Carrera = carre.Nombre,
                                     Telefono = estu.Telefono,
