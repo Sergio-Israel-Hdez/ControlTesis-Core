@@ -21,5 +21,19 @@ namespace ControlTesisCore.Models
                                     Nota = cabez_grup.Nota});
             return result;
         }
+        public IQueryable<BD.CuerpoGrupoEstudiante>CuerpoGrupoEstudiantes(int idusuario){
+            var result =(from us in ct.Usuario
+                        join es in ct.Estudiante on us.Idusuario equals es.Idestudiante
+                        join car in ct.Carrera on es.Idcarrera equals car.Idcarrera
+                        where us.Idusuario==idusuario
+                        select new BD.CuerpoGrupoEstudiante{
+                            Nombre = es.Nombre,
+                            Apellido = es.Apellido,
+                            Direccion = es.Direccion,
+                            Correo = es.Correo,
+                            Telefono = es.Telefono
+                        });
+            return result;            
+        }
     }
 }
