@@ -30,6 +30,8 @@ namespace ControlTesisCore.Controllers
             {
                 var resultCabezaGrupo = estudianteModel.CabezaGrupoEstudiante(idUsuario);
                 ViewBag.CabezaGrupoEstudiante = resultCabezaGrupo;
+                var resultCuerpoGrupo = estudianteModel.CuerpoGrupoEstudiantes(idUsuario);
+                ViewBag.CuerpoGrupoEstudiantes = resultCuerpoGrupo;
                 return View();
             }else{
                 return RedirectToAction("Index","Home");
