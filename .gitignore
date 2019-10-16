@@ -13,3 +13,5 @@ bin/Debug/netcoreapp3.0/ControlTesisCore.deps.json
 bin/Debug/netcoreapp3.0/ControlTesisCore.pdb
 bin/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
 bin/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
+obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.0/project.razor.json
