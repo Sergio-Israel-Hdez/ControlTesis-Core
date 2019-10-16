@@ -25,12 +25,16 @@ namespace ControlTesisCore.Controllers
         public IActionResult Index()
         {
             int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
-            
+            int idGrupo =0;
             if (idUsuario!=0)
             {
                 var resultCabezaGrupo = estudianteModel.CabezaGrupoEstudiante(idUsuario);
                 ViewBag.CabezaGrupoEstudiante = resultCabezaGrupo;
-                var resultCuerpoGrupo = estudianteModel.CuerpoGrupoEstudiantes(idUsuario);
+                foreach (var item in resultCabezaGrupo)
+                {
+                    idGrupo = item.IdGrupo;
+                }
+                var resultCuerpoGrupo = estudianteModel.CuerpoGrupoEstudiantes(idGrupo);
                 ViewBag.CuerpoGrupoEstudiantes = resultCuerpoGrupo;
                 return View();
             }else{
