@@ -20,3 +20,13 @@ obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
 obj/Debug/netcoreapp3.0/ControlTesisCore.assets.cache
 obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
 obj/Debug/netcoreapp3.0/project.razor.json
+bin/Debug/netcoreapp3.0/ControlTesisCore.dll
+bin/Debug/netcoreapp3.0/ControlTesisCore.pdb
+bin/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
+bin/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
+obj/Debug/netcoreapp3.0/ControlTesisCore.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.0/ControlTesisCore.dll
+obj/Debug/netcoreapp3.0/ControlTesisCore.pdb
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.dll
+obj/Debug/netcoreapp3.0/ControlTesisCore.Views.pdb
+obj/Debug/netcoreapp3.0/Razor/Views/Estudiante/Index.cshtml.g.cs
