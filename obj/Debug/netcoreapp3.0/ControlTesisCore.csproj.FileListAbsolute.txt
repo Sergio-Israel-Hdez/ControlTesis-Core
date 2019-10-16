@@ -53,3 +53,4 @@ C:\Users\sergi\Desktop\core\ControlTesisCore\obj\Debug\netcoreapp3.0\ControlTesi
 c:\Users\sergi\Desktop\core\ControlTesisCore\obj\Debug\netcoreapp3.0\Razor\Views\Estudiante\Index.cshtml.g.cs
 c:\Users\sergi\Desktop\core\ControlTesisCore\obj\Debug\netcoreapp3.0\Razor\Views\Home\Login.cshtml.g.cs
 c:\Users\sergi\Desktop\core\ControlTesisCore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_LayoutEstudiante.cshtml.g.cs
+c:\Users\sergi\Desktop\core\ControlTesisCore\obj\Debug\netcoreapp3.0\Razor\Views\Estudiante\Perfil.cshtml.g.cs
