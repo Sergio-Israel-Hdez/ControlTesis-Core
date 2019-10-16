@@ -26,7 +26,7 @@ namespace ControlTesisCore.Controllers
         {
             int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
             
-            if (idUsuario!=default(int))
+            if (idUsuario!=0)
             {
                 var resultCabezaGrupo = estudianteModel.CabezaGrupoEstudiante(idUsuario);
                 ViewBag.CabezaGrupoEstudiante = resultCabezaGrupo;
