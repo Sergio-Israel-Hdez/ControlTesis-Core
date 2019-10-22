@@ -2,8 +2,9 @@
 @{
     ViewData["Title"]= "Login";
 }
-<div class="shadow p-3 mb-5 bg-white rounded">
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
     <div class="text-center">
+        <h1 class="display-4">Login</h1>
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
@@ -13,13 +14,13 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.Carnet, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div>
-                    @Html.EditorFor(model => model.Carnet, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.EditorFor(model => model.Carnet, new { htmlAttributes = new { @class = "form-control" , @placeholder="Ejem: 27-1023-2016" } })
                     @Html.ValidationMessageFor(model => model.Carnet, "", new { @class = "text-danger" })
                 </div>
                 <p></p>
-                @Html.LabelFor(model => model.Contraseña, htmlAttributes: new { @class = "control-label col-md-2" })
+                @Html.LabelFor(model => model.Contraseña, htmlAttributes: new { @class = "control-label col-md-2"})
                 <div>
-                    @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control" })
+                    @Html.PasswordFor(model => model.Contraseña, new { @class = "form-control",@placeholder="Contraseña" })
                     @Html.ValidationMessageFor(model => model.Contraseña, "", new { @class = "text-danger" })
                 </div>
             </div>
