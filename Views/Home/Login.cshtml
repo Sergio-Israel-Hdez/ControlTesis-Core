@@ -2,7 +2,8 @@
 @{
     ViewData["Title"]= "Login";
 }
-<div class="text-center">
+<div class="shadow p-3 mb-5 bg-white rounded">
+    <div class="text-center">
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
@@ -29,4 +30,5 @@
             </div>
         </div>
     }
+</div>
 </div>
