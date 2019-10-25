@@ -1,8 +1,23 @@
+@model IQueryable<ControlTesisCore.Models.BD.EstudiantePerfil>
 @{
     ViewData["Title"] = "Perfil";
     Layout = "~/Views/Shared/_LayoutEstudiante.cshtml";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Perfil Estudiante</h1>
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+        <h1 class="display-4">Perfil Estudiante</h1>
+        @foreach (var item in Model)
+        {
+        <div class="container">
+           <div class="row">
+              <div class="col">col</div>
+              <div class="col">col</div>
+              <div class="w-100"></div>
+              <div class="col">col</div>
+              <div class="col">col</div>
+            </div>
+        </div>
+        }
+    </div>
 </div>

@@ -46,7 +46,8 @@ namespace ControlTesisCore.Controllers
           int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
           if (idUsuario!=0)
           {
-              return View();
+              var resultPerfil = estudianteModel.PerfilEstudiante(idUsuario);
+              return View(resultPerfil);
           }else
           {
               return RedirectToAction("Index","Home");

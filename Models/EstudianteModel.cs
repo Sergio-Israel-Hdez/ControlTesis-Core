@@ -36,5 +36,20 @@ namespace ControlTesisCore.Models
                                     });
             return result;            
         }
+        public IQueryable<BD.EstudiantePerfil>PerfilEstudiante(int idUsuario){
+            var result =(
+                from us in ct.Usuario
+                join es in ct.Estudiante on us.Idusuario equals es.Idestudiante
+                join car in ct.Carrera on es.Idcarrera equals car.Idcarrera
+                where us.Idusuario==1
+                select new BD.EstudiantePerfil{
+                    Nombre = es.Nombre,
+                    Apellido = es.Apellido,
+                    Direccion = es.Direccion,
+                    Correo = es.Correo,
+                    Telefono = es.Telefono
+                });
+            return result;
+        }
     }
 }
