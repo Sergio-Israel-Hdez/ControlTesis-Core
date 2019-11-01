@@ -9,15 +9,15 @@
         <h1 class="display-4">Perfil Estudiante</h1>
         @foreach (var item in Model)
         {
-        <div class="container">
-           <div class="row">
-              <div class="col">col</div>
-              <div class="col">col</div>
-              <div class="w-100"></div>
-              <div class="col">col</div>
-              <div class="col">col</div>
-            </div>
-        </div>
+        <ul class="list-group">
+        <li class="list-group-item">@item.Nombre @item.Apellido</li>
+        <li class="list-group-item">@item.Direccion</li>
+        <li class="list-group-item">@item.Correo</li>
+        <li class="list-group-item">@item.Telefono</li>
+        <li class="list-group-item">
+            <a asp-action="ModificarPerfil" asp-controller="Estudiante" class="btn btn-primary" role="button" >Modificar</a>
+        </li>
+        </ul>
         }
     </div>
 </div>

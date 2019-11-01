@@ -51,5 +51,28 @@ namespace ControlTesisCore.Models
                 });
             return result;
         }
+        public int ModificarEstudiante(BD.EstudiantePerfil IN_estudiante){
+            if (true)
+            {
+                try
+                {
+                    using(var st = new BD.controltesisContext()){
+                        BD.Estudiante estudianteMod = st.Estudiante.Find(IN_estudiante.IdUsuario);
+                        estudianteMod.Nombre = IN_estudiante.Nombre;
+                        estudianteMod.Apellido = IN_estudiante.Apellido;
+                        estudianteMod.Telefono = IN_estudiante.Telefono;
+                        estudianteMod.Direccion = IN_estudiante.Direccion;
+                        estudianteMod.Correo = IN_estudiante.Correo;
+                        var result = st.SaveChanges();
+                        return result;
+                    }
+                }
+                catch (System.Exception)
+                {
+                    
+                    throw;
+                }
+            }
+        }
     }
 }

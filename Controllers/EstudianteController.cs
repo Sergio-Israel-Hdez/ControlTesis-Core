@@ -53,6 +53,16 @@ namespace ControlTesisCore.Controllers
               return RedirectToAction("Index","Home");
           }
         }
+        public IActionResult ModificarPerfil(){
+            int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
+          if (idUsuario!=0)
+          {
+              return View();
+          }else
+          {
+              return RedirectToAction("Index","Home");
+          }
+        }
         public IActionResult Desconectar()
         {
           HttpContext.Session.SetInt32(SessionId,0);
