@@ -54,9 +54,28 @@ namespace ControlTesisCore.Controllers
           }
         }
         public IActionResult ModificarPerfil(){
-            int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
+          int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
           if (idUsuario!=0)
           {
+              var resultPerfil = estudianteModel.PerfilEstudiante(idUsuario);
+              return View(resultPerfil);
+          }else
+          {
+              return RedirectToAction("Index","Home");
+          }
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ModificarPerfil(Models.BD.EstudiantePerfil estudiante)
+        {
+           int idUsuario = Convert.ToInt32(HttpContext.Session.GetInt32(SessionId));
+          if (idUsuario!=0)
+          {
+              var result = estudianteModel.ModificarEstudiante(estudiante);
+              if (result!=0)
+              {
+                  return RedirectToAction("Index");
+              }
               return View();
           }else
           {
