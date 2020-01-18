@@ -5326,11 +5326,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sergi\\Desktop\\core\\ControlTesisCore\\ControlTesisCore.csproj",
+      "projectUniqueName": "C:\\Users\\sergi\\Desktop\\newRepo\\ControlTesisCore.csproj",
       "projectName": "ControlTesisCore",
-      "projectPath": "C:\\Users\\sergi\\Desktop\\core\\ControlTesisCore\\ControlTesisCore.csproj",
+      "projectPath": "C:\\Users\\sergi\\Desktop\\newRepo\\ControlTesisCore.csproj",
       "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sergi\\Desktop\\core\\ControlTesisCore\\obj\\",
+      "outputPath": "C:\\Users\\sergi\\Desktop\\newRepo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5343,7 +5343,8 @@
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
+        "C:\\Users\\sergi\\.nuget\\packages": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
       },

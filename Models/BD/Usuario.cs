@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ControlTesisCore.Models.BD
 {
@@ -13,7 +14,9 @@ namespace ControlTesisCore.Models.BD
         }
 
         public int Idusuario { get; set; }
+        [Required]
         public string Carnet { get; set; }
+        [Required]
         public string Contraseña { get; set; }
         public int? Estado { get; set; }
         public int? Rol { get; set; }
